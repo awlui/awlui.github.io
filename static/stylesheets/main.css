@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.row {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto 0 auto; }
+  .row .col {
+    flex: 1;
+    margin: 20px; }
+
+nav {
+  background-color: #F9FFF6;
+  font-size: 20px;
+  text-align: center;
+  height: 100px;
+  vertical-align: center;
+  line-height: 100px;
+  font-family: 'Cutive Mono', monospace;
+  position: fixed;
+  width: 100%;
+  top: 0; }
+  nav a {
+    color: black;
+    text-decoration: none; }
+    nav a:focus {
+      color: black; }
+  nav ul {
+    position: absolute;
+    right: 0; }
+    nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 10px; }
+    @media (max-width: 768px) {
+      nav ul {
+        display: none; } }
+  nav button {
+    position: absolute;
+    right: 0;
+    line-height: 100px;
+    border: none;
+    background-color: inherit; }
+
+header {
+  margin-top: 100px;
+  background-color: #05576B;
+  height: auto;
+  padding: 30px 0; }
+  header div#terminal {
+    border-radius: 5px;
+    padding: 20px;
+    border-top: 15px solid white;
+    width: 95%;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: black;
+    color: white; }
+    header div#terminal ul.io li {
+      list-style-type: none;
+      padding: 5px 0;
+      font-family: 'Space Mono', 'Monospace'; }
+      header div#terminal ul.io li:nth-child(even) {
+        color: #4E8243; }
+      header div#terminal ul.io li.undefined {
+        color: grey; }
+      header div#terminal ul.io li a {
+        color: #3a92c8; }
+
+div#projects {
+  text-align: center;
+  background-color: #8F3946;
+  width: auto;
+  font-size: 10px;
+  padding: 60px 0;
+  padding-top: 120px;
+  font-family: 'Lato', sans-serif; }
+  @media (max-width: 768px) {
+    div#projects .row {
+      flex-flow: column-reverse; } }
+  div#projects h2 {
+    color: white;
+    font-family: 'Cutive Mono', Monospace;
+    padding-bottom: 60px; }
+  div#projects .project {
+    background-color: white;
+    margin-bottom: 20px; }
+    div#projects .project .imgContainer {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto; }
+      @media (min-width: 769px) {
+        div#projects .project .imgContainer {
+          min-height: 300px; } }
+      div#projects .project .imgContainer img {
+        width: 100%; }
+    div#projects .project .description {
+      padding: 20px; }
+      div#projects .project .description h3 {
+        font-size: 16px;
+        margin-bottom: 10px; }
+      div#projects .project .description p {
+        text-align: left;
+        font-size: 14px; }
+
+div#education {
+  padding-top: 120px;
+  text-align: center;
+  background-color: #F9FFF6;
+  font-size: 10px; }
+  div#education .row {
+    justify-content: center; }
+    div#education .row.UCI {
+      max-width: 800px; }
+      @media (max-width: 768px) {
+        div#education .row.UCI {
+          flex-flow: column; }
+          div#education .row.UCI .schoolLogo {
+            flex: 1; }
+          div#education .row.UCI .schoolDesc {
+            flex: 1; } }
+      div#education .row.UCI strong {
+        font-size: 20px; }
+      div#education .row.UCI .schoolLogo {
+        flex: 1; }
+        div#education .row.UCI .schoolLogo img {
+          max-width: 400px; }
+      div#education .row.UCI .schoolDesc {
+        flex: 4;
+        text-align: left;
+        display: flex;
+        font-size: 12px;
+        flex-flow: column;
+        justify-content: center; }
+        div#education .row.UCI .schoolDesc ul.courses {
+          padding-left: 10px; }
+          div#education .row.UCI .schoolDesc ul.courses li {
+            list-style-type: none; }
+      div#education .row.UCI .gradYears {
+        display: none; }
+        @media (max-width: 768px) {
+          div#education .row.UCI .gradYears {
+            display: block; } }
+      div#education .row.UCI .gradDesc {
+        flex: 1;
+        font-size: 12px; }
+        @media (max-width: 769px) {
+          div#education .row.UCI .gradDesc {
+            display: none; } }
+        div#education .row.UCI .gradDesc ul li {
+          list-style-type: none; }
+    div#education .row img {
+      width: 100%; }
+  div#education h2 {
+    font-family: 'Cutive Mono', Monospace;
+    border-bottom: 1px solid black;
+    max-width: 300px; }

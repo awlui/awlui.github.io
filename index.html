@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Andy's Resume</title>
+  <link rel="stylesheet" href="static/stylesheets/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Space+Mono|Lato" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+	<ul>
+		<li><a class="projectLink" href="#projects">Projects</a></li>
+		<li><a class="educationLink" href="#education">Education</a></li>
+	</ul>
+    	<h1><a href="#">Andy Lui</a></h1>
+    </nav> 
+    <header>
+      <div id="terminal">
+      	<ul class="io" >
+	  <li>&gt; import andy from 'diamond_Bar_California'</li>
+	  <li class="undefined">undefined</li>
+          <li>&gt; typeof andy </li>
+	  <li>'object'</li>
+	  <li>&gt; andy.education</li>
+	  <li>{ 'University Of California: Irvine': { graduated: true, major: 'Biological Sciences', level: 'B.S.', cGPA: 3.955 } }</li>
+          <li>&gt; andy.resume</li>
+	  <li><a href="static/andylui.pdf">"andylui.pdf"</a></li>
+	  <li>&gt; andy.technologies</li>
+	  <li>["HTML5", "CSS3", "Javascript(ES5-6)", "Typescript", "Webpack", "Git", "Node.js", "Sass", "React/Redux", "Python", "mySQL", "mongoDB", "TDD", "Java"]</li>
+	  <li>&gt; andy.email</li>
+	  <li><a href="awlui.inquiries@gmail.com">"awlui.inquiries@gmail.com"</a></li>
+	  <li>&gt; andy.github</li>
+	  <li><a href="https://www.github.com/awlui">"https://www.github.com/awlui"</a></li>
+	</ul>
+      </div>
+    </header>
+    <div id="projects">
+      <h2>Projects</h2>
+      <div class="row">
+      <div class="col project">
+	<div class="imgContainer">
+	    <img src="static/test.gif" alt="">
+	</div>
+	<div class="description">
+	  <h3>Scroll-N-React</h3>
+	  <p><strong>Software: </strong> A React Component Library. Its an infinite scroller but with the added benefit of symmetric behavior on both ends of the scrolling component. This library was made in response to other infinite scrollers that continuously fire their fetching function on scroll up. This leads to an assymmetric experience when loading at the bottom vs loading at the top.</p>
+	</div>
+      </div>
+      <div class="col project">
+        <div class="imgContainer">
+	  <img src="static/airbnb.gif" alt="">
+	</div>
+	<div class="description">
+	  <h3>Airbnb Map Mock</h3>
+	  <p><strong>Application: </strong> A mock of the airbnb map application.</p>
+	</div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col project">
+	  <div class="imgContainer">
+	    <img src="https://camo.githubusercontent.com/9c40093d0753b3bc929d32bed54be5223f8928ec/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a6a2d534f7478716c2d53716d766a3069305457714d672e6a706567" alt="">
+	  </div>
+	  <div class="description">
+	    <h3>Redxjs</h3>
+            <p><strong>Library: </strong>Taking the mantra to heart, I created a RxJS based implementation of the redux library. Also shares some of the api of react-redux like connect, applyMiddleware, etc. </p>
+	  </div>
+	</div>
+	<div class="col project">
+	  <div class="imgContainer">
+	    <img src="static/ufc.gif" alt="">
+	  </div>
+	  <div class="description">
+	    <h3>ng-UFC</h3>
+	    <p><strong>Application: </strong>An Angular 1.x SPA that consumes UFC's official API. It provides fighter and past/future event information.</p>
+	  </div>
+	</div>
+      </div> <!-- .row -->
+    </div> <!-- .projects -->
+    <div id="education">
+      <div class="row">
+	      <h2 class="col">Education</h2>
+      </div>
+      <div class="row UCI">
+        <div class="col schoolLogo">
+	  <img src="http://wp.due.uci.edu/home/wp-content/uploads/sites/8/2014/10/DUE-logo-home.png" alt="">
+	</div>
+	<div class="col schoolDesc">
+		<p><strong>University Of California: Irvine</strong></p>
+		<em class="gradYears">2010-2014</em>
+		<em>B.S. Biological Sciences</em>
+		<em>Cum. GPA 3.955 </em>
+		<em>Phi Beta Kappa University-wide Honors</em>
+		<br/>
+		Related Coursework:
+		<ul class="courses" >
+			<li>Computational Linear Algebra</li>
+			<li>Python Programming</li>
+			<li>Surgery (VB scripting)</li>
+			<li>Protein Conformation Research(Computational) w/ Linux</li>
+		</ul>
+
+	</div>
+	<div class="col gradDesc">
+	  <p>2010-2014</p>
+	</div>
+      </div>
+    </div>
+    <script src="
+https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+    <script>
+      let projects = document.querySelector('#projects');
+      let projectlink = document.querySelector('a.projectLink');
+      let education = document.querySelector('#education');
+      let educationlink = document.querySelector('a.educationLink');
+      projectlink.addEventListener('click', function(e) {
+        e.preventDefault();
+	      Velocity(projects, 'scroll', {duration: 1500})
+      })
+      
+    </script>
+  </body>
+</html>
