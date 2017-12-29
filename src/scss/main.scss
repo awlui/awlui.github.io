@@ -4,25 +4,7 @@
   box-sizing: border-box;
 }
 
-// .row {
-//   max-width: 1200px;
-//   width:95%;
-//   margin: 0 auto;
-//   height: auto;
-//   @media(min-width: 769px) {
-//     .lg-col-half {
-//       width: 44%;
-//       margin: 0 2.5%;
-//       display: inline-block;
-//     }
-//   }
-//   @media(max-width: 768px) {
-//     .sm-col-full {
-//       width: 98%;
-//       display: inline-block;
-//     }
-//   }
-// }
+
 
 .row {
   display: flex;
@@ -48,6 +30,9 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
+  @media (max-width: 768px) {
+    position: relative;
+  }
   a {
     color: black;
     text-decoration: none;
