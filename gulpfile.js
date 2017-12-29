@@ -1,7 +1,8 @@
 let gulp = require('gulp'),
     gutil = require('gulp-util'),
     sass = require('gulp-sass'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    imagemin = require('gulp-imagemin')
 
 gulp.task('build-css', function() {
   console.log('build css')
@@ -11,6 +12,11 @@ gulp.task('build-css', function() {
        .pipe(browserSync.stream());
 });
 
+gulp.task('minify', function() {
+  gulp.src('src/*.gif')
+	.pipe(imagemin())
+	.pipe(gulp.dest('static'))
+});
 
 gulp.task('serve', ['build-css'], function() {
   browserSync.init({
