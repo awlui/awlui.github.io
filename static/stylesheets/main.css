@@ -213,4 +213,6 @@ footer {
   .tags span {
     border-radius: 5px;
     border: 1px solid black;
-    padding: 5px 10px; }
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block; }
