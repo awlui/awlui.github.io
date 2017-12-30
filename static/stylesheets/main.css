@@ -103,13 +103,16 @@ div#projects {
       div#projects .project .imgContainer img {
         width: 100%; }
     div#projects .project .description {
-      padding: 20px; }
+      padding: 20px;
+      font-size: 14px; }
+      div#projects .project .description a {
+        margin: 10px 0; }
       div#projects .project .description h3 {
         font-size: 16px;
         margin-bottom: 10px; }
       div#projects .project .description p {
-        text-align: left;
-        font-size: 14px; }
+        margin-top: 10px;
+        text-align: left; }
 
 div#education {
   padding-top: 80px;
