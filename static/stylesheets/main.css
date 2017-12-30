@@ -138,7 +138,7 @@ div#education {
         flex: 4;
         text-align: left;
         display: flex;
-        font-size: 12px;
+        font-size: 14px;
         flex-flow: column;
         justify-content: center; }
         div#education .row.UCI .schoolDesc ul.courses {
@@ -152,7 +152,7 @@ div#education {
             display: block; } }
       div#education .row.UCI .gradDesc {
         flex: 1;
-        font-size: 12px; }
+        font-size: 14px; }
         @media (max-width: 769px) {
           div#education .row.UCI .gradDesc {
             display: none; } }
@@ -185,20 +185,32 @@ footer {
 #experience {
   padding-top: 80px;
   background-color: #438253;
-  font-size: 10px; }
+  font-size: 12px; }
   #experience h2 {
     font-family: 'Cutive Mono', Monospace;
     text-align: center; }
   #experience .row {
+    display: flex;
     max-width: 800px; }
   #experience .col.experienceLogo {
     flex: 1; }
     #experience .col.experienceLogo img {
+      width: 100%;
       max-width: 400px; }
   #experience .col.experienceDesc {
-    font-size: 12px; }
+    flex: 3;
+    font-size: 14px; }
     #experience .col.experienceDesc strong {
       font-size: 20px; }
   @media (max-width: 768px) {
     #experience .experienceList {
-      flex-flow: column; } }
+      flex-flow: column;
+      text-align: center; } }
+
+.tags {
+  height: auto;
+  margin: 10px; }
+  .tags span {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 10px; }

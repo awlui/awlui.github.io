@@ -48,6 +48,9 @@
 	  <h3>Scroll-N-React</h3>
 	  <p><strong>Software: </strong> A React Component Library. Its an infinite scroller but with the added benefit of symmetric behavior on both ends of the scrolling component. This library was made in response to other infinite scrollers that continuously fire their fetching function on scroll up. This leads to an assymmetric experience when loading at the bottom vs loading at the top.</p>
 	</div>
+      <div class="tags">
+        <span>Typescript</span>
+      </div>
       </div>
       <div class="col project">
         <div class="imgContainer">
@@ -115,14 +118,40 @@
       </div>
       <div class="row experienceList">
         <div class="col experienceLogo">
+          <img src="https://eslwatch.info/images/images-2014/Logos/koreapolyschool.jpg" alt="">
+        </div>
+        <div class="col experienceDesc">
+          <p><strong>Daejeon Poly</strong></p>
+          <em>Part-Time English Teacher // 2015-2015</em>
+          <br/>
+          <em>Full-Time English Teacher // 2015-2016</em>
+          <br/>
+          <em>Responsibilities:</em>
+          <ul>
+            <li>Developed an English curriculum to teach 6-12 year olds.</li>
+            <li>Juggled between kids who had pre-existing knowledge and those that were just starting off.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row experienceList">
+        <div class="col experienceLogo">
 	  <img src="http://www.calit2.uci.edu/uploads/Labs/Beckman.gif" alt="">
 	</div>
 	<div class="col experienceDesc">
 	  <p><strong>Beckman Clinical Laser Institute</strong></p>
 	  <em>Specialist</em>
-	</div>
-      </div>
-    </div>
+        <br/>
+	  <em>2013-2014</em>
+        <br/>
+	  <em>Responsibilities:</em>
+	  <ul>
+	  	<li>Perform experiments using the DOSI device to determine project goal, which was concerning Traumatic Brain Injury, feasability.</li>
+		<li>Secure funding from private funding.</li>
+		<li>Manage small team of interns</li>
+	  </ul>
+	</div> <!-- div.experienceDesc -->
+      </div> <!-- div.experienceList -->
+    </div> <!-- div#experience -->
     <footer>
       <p>&copy; 2017 Andy Lui</p>
       <div class="contact">
@@ -137,12 +166,23 @@ https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
       let projects = document.querySelector('#projects');
       let projectlink = document.querySelector('a.projectLink');
       let education = document.querySelector('#education');
-      let educationlink = document.querySelector('a.educationLink');
+      let educationLink = document.querySelector('a.educationLink');
+
+      let experience = document.querySelector('#experience');
+      let experienceLink = document.querySelector('a.experienceLink');
+
       projectlink.addEventListener('click', function(e) {
         e.preventDefault();
 	      Velocity(projects, 'scroll', {duration: 1500})
-      })
-      
+      });
+      educationLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      Velocity(education, 'scroll', {duration: 1500 })
+      }); 
+      experienceLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      Velocity(experience, 'scroll', {duration: 1500});
+      });
     </script>
   </body>
 </html>
