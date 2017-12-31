@@ -39,6 +39,17 @@
     </header>
     <div id="projects">
       <h2>Projects</h2>
+      <div class="row bannerDescription">
+        <div class="col">
+          <div class="tags">
+            <span class="dependency">Dependency</span>
+            <span class="peerDependency">Peer Dependency</span>
+            <span class="devDependency">Dev Dependency</span>
+            <span class="REST">RESTful API</span>
+            <span class="infrastructure">Infrastructure</span>
+          </div>
+        </div>
+      </div>
       <div class="row">
       <div class="col project">
 	<div class="imgContainer">
@@ -49,11 +60,11 @@
 	  <a href="https://github.com/awlui/scroll-n-react" target="_blank" >Github</a> // 
 	  <a href="http://andy-lui.com/scroll-n-react/" target="_blank" >Demo Link</a>
 	  <p><strong>Software: </strong> A React Component Library. Its an infinite scroller but with the added benefit of symmetric behavior on both ends of the scrolling component. This library was made in response to other infinite scrollers that continuously fire their fetching function on scroll up. This leads to an assymmetric experience when loading at the bottom vs loading at the top.</p>
-	</div>
-      <div class="tags">
-        <span>Typescript</span>
-        <span>Webpack</span>
-        <span>Jest</span>
+        <div class="tags">
+          <span class="devDependency">Typescript</span>
+          <span class="devDependency">Webpack</span>
+          <span class="devDependency">Jest</span>
+        </div>
       </div>
       </div>
       <div class="col project">
@@ -65,17 +76,17 @@
 	  <a href="https://github.com/awlui/airbnbREACT" target="_blank">Github</a> // 
 	  <a href="https://dry-fortress-91634.herokuapp.com/" target="_blank">App Link</a>
 	  <p><strong>Application: </strong> A mock of the airbnb application. I mostly just wanted to mimic the map search feature which I thought was really cool. Other than that, I also created a page to review the information of each rental site, including user reviews.</p>
-	</div>
-      <div class="tags">
-        <span>ES6</span>
-        <span>Webpack</span>
-        <span>Axios</span>
-        <span>React Google Maps Library</span>
-        <span>Airbnb REST api</span>
-        <span>React</span>
-        <span>Redux</span>
-        <span>SASS</span>
-        <span>Nginx</span>
+	 <div class="tags">
+          <span class="devDependency">ES6 via Babel</span>
+          <span class="devDependency">Webpack</span>
+          <span class="devDependency">Axios</span>
+          <span class="dependency">React Google Maps Library</span>
+          <span class="REST">Airbnb REST api</span>
+          <span class="dependency">React</span>
+          <span class="dependency">Redux</span>
+          <span class="devDependency">SASS</span>
+          <span class="infrastructure">Nginx</span>
+        </div>
       </div>
       </div>
       </div>
@@ -89,9 +100,9 @@
 	    <a href="https://github.com/awlui/redxjs">Github</a>
             <p><strong>Library: </strong>Taking the mantra to heart, I created a RxJS based implementation of the redux library. Also shares some of the api of react-redux like connect, applyMiddleware, etc. </p>
             <div class="tags">
-              <span>Typescript</span>
-              <span>Webpack</span>
-              <span>RxJS</span>
+              <span class="devDependency">Typescript</span>
+              <span class="devDependency">Webpack</span>
+              <span class="peerDependency">RxJS</span>
             </div>
 	  </div>
 	</div>
@@ -104,15 +115,32 @@
 	    <a href="https://github.com/awlui/ufcSPA">Github</a> // 
 	    <a href="https://gentle-citadel-87711.herokuapp.com">App Link</a>
 	    <p><strong>Application: </strong>An Angular 1.x SPA that consumes UFC's official API. It provides fighter and past/future event information.</p>
+             <div class="tags">
+               <span class="dependency">Angular 1.x</span>
+               <span class="REST">UFC Official REST API</span>
+               <span class="devDependency">Protractor</span>
+               <span class="devDependency">SASS</span>
+           </div>
 	  </div>
-         <div class="tags">
-           <span>Angular 1.x</span>
-           <span>UFC Official REST API</span>
-           <span>Protractor</span>
-           <span>SASS</span>
-         </div>
 	</div>
       </div> <!-- .row -->
+      <div class="row">
+        <div class="col project">
+	  <div class="imgContainer">
+          <img src="static/sockettoobservable.png" alt="">
+        </div>
+	  <div class="description">
+          <h3>SocketIOToObservable</h3>
+          <a href="https://github.com/awlui/socketio_to_observable">Github</a>
+          <p><strong>Library: </strong>I'm in the middle of create a facebook/facebook messenger type application. The communication infrastructure is based on Socket.io Rooms and Namespaces. Development is taking a while so I like to build on the project incrementally. This library is one of the products of this incremental process. I needed a way to communicate with the Socket.io Server through the client. Since I was leveraging RxJS observables in my client infrastructure already, I thought I'd extend them to patch the client into the socket.io server. I explain more in the github README.md, check it out!</p>
+          <div class="tags">
+            <span>Typescript</span>
+            <span class="peerDependency">RxJS</span>
+            <span class="peerDependency">Socket.io client</span>
+          </div>
+        </div>
+	</div>     
+      </div>
     </div> <!-- .projects -->
     <div id="education">
       <div class="row">
@@ -183,6 +211,7 @@
 	</div> <!-- div.experienceDesc -->
       </div> <!-- div.experienceList -->
     </div> <!-- div#experience -->
+
     <footer>
       <p>&copy; 2017 Andy Lui</p>
       <div class="contact">
